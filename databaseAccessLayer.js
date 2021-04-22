@@ -2,7 +2,7 @@ const database = include('/databaseConnection');
 
 
 function grabRestaurants(callback) {
-	let sqlQuery = "SELECT restaurant_id, name, description FROM restaurant";
+	let sqlQuery = "SELECT recipe_id, name, description, cook_time FROM recipe";
 	database.query(sqlQuery, (err, results, fields) => {
 		if (err) {
 			callback(err, null);
