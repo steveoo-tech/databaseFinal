@@ -85,7 +85,7 @@ function addRestaurant(postData, callback) {
 		}
 	});
 }
-function deleteRestaurant(restaurantId, callback) {
+function deleteRestaurant(recipeId, callback) {
 	let sqlDeleteRestaurant = "DELETE FROM recipe WHERE recipe_id = :restID";
 	let params = {
 		restID: recipeId
